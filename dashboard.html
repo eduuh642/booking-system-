@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Dashboard - Grand Horizon Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-page">
+    <div class="section active">
+        <div class="container">
+            <h2>Booking Dashboard</h2>
+            <button id="logout-btn">Log Out</button>
+            <form id="booking-form">
+                <input type="text" id="guest-name" placeholder="Guest Name" required>
+                <input type="date" id="check-in" required>
+                <input type="date" id="check-out" required>
+                <select id="room-type" required>
+                    <option value="" disabled selected>Select Room Type</option>
+                    <option value="Standard">Standard</option>
+                    <option value="Deluxe">Deluxe</option>
+                    <option value="Suite">Suite</option>
+                </select>
+                <input type="hidden" id="booking-id">
+                <button type="submit">Add Booking</button>
+            </form>
+            <table id="booking-table">
+                <thead>
+                    <tr>
+                        <th>Guest Name</th>
+                        <th>Check-In</th>
+                        <th>Check-Out</th>
+                        <th>Room Type</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="booking-list"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

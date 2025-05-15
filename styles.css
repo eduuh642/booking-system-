@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* Page-specific background colors */
+body.signup-page {
+    background-color: #FF6F61; /* Sunset Orange */
+}
+
+body.login-page {
+    background-color: #4A90E2; /* Ocean Blue */
+}
+
+body.dashboard-page {
+    background-color: #2ECC71; /* Emerald Green */
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+h2 {
+    color: #1a3c6d;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 12px;
+    border: 1px solid #b0c4de;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #1a3c6d;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0e2a4b;
+}
+
+.signup-page button, .login-page button {
+    background-color: #ffffff;
+    color: #1a3c6d;
+    border: 1px solid #1a3c6d;
+}
+
+.signup-page button:hover, .login-page button:hover {
+    background-color: #e0e0e0;
+}
+
+a {
+    color: #1a3c6d;
+    text-decoration: none;
+}
+
+.signup-page a, .login-page a {
+    color: #ffffff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #b0c4de;
+    text-align: left;
+}
+
+th {
+    background-color: #1a3c6d;
+    color: white;
+}
+
+#logout-btn {
+    background-color: #dc3545;
+    margin-bottom: 25px;
+}
+
+#logout-btn:hover {
+    background-color: #c82333;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        max-width: 95%;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+}
